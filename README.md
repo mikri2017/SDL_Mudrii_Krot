@@ -40,6 +40,17 @@ sudo apt-get install libsdl2-dev libsdl2-image-dev libsdl2-mixer-dev libsdl2-ttf
 ### Компиляция и использование
 Проект кроссплатформенный (Windows/Linux), собирать, либо через общий Makefile, либо, открыв папку с проектом в Visual Studio Code, зажимаем Ctrl + Shift + B и выбираем желаемый сценарий сборки.
 
+### Используемый инструментарий
+
+* Visual Studio Code
+https://code.visualstudio.com/Download
+
+* Krita
+https://krita.org/en/download/krita-desktop/
+
+* Gimp
+https://www.gimp.org/downloads/
+
 ### Разработчики
 
 * **Михаил Рыжков** - <2007mik007@mail.ru>
