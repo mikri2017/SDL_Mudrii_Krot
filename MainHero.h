@@ -18,6 +18,8 @@ public:
     ~MainHero();
     bool init(SDL_Renderer *renderer);
     void draw(SDL_Renderer *renderer);
+    int getCurTextureRow();
+    int getCurTextureFrame();
     void setTextureRowAndFrame(int row, int frame);
 };
 

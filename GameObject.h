@@ -28,6 +28,8 @@ public:
     virtual int getHeight();
     virtual void setWidthHeight(int w, int h);
     virtual void setSpriteFilePath(std::string file_path);
+    virtual int getCurTextureRow() = 0;
+    virtual int getCurTextureFrame() = 0;
     virtual void setTextureRowAndFrame(int row, int frame) = 0;
 };
 

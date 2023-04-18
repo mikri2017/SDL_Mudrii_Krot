@@ -39,6 +39,16 @@ void MainHero::draw(SDL_Renderer *renderer)
     texture_mgr->drawFrame(texture_name, g_obj_zone.x, g_obj_zone.y, g_obj_zone.w, g_obj_zone.h, cur_row, cur_frame, renderer);
 }
 
+int MainHero::getCurTextureRow()
+{
+    return cur_row;
+}
+
+int MainHero::getCurTextureFrame()
+{
+    return cur_frame;
+}
+
 void MainHero::setTextureRowAndFrame(int row, int frame)
 {
     if (row < 1)
