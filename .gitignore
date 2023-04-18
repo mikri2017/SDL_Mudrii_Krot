@@ -1,0 +1,6 @@
+*.o
+bin
+*.dll
+.vscode/ipch
+*.png
+*.ttf
