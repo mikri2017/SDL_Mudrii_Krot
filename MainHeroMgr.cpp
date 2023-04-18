@@ -13,7 +13,6 @@ MainHeroMgr::MainHeroMgr()
 
 MainHeroMgr::~MainHeroMgr()
 {
-    //delete gr_power_mgr;
     delete g_obj;
     debug() << "MainHeroMgr end\n";
 }
@@ -55,18 +54,32 @@ gameReaction MainHeroMgr::process_keyboard_keydown(SDL_Keycode keycode)
         {
             g_obj->setRealPosition(g_obj->getRealPositionBeginX() - move_step, g_obj->getRealPositionBeginY());
         }
-        //gr_power_mgr->setAngle(-90-(90-58));
-        g_obj->setTextureRowAndFrame(2, 0);
+
+        if (g_obj->getCurTextureFrame() == 0)
+        {
+            g_obj->setTextureRowAndFrame(2, 1);
+        }
+        else
+        {
+            g_obj->setTextureRowAndFrame(2, 0);
+        }
     }
     else if (keycode == SDLK_RIGHT)
     {
         g_obj->setRealPosition(g_obj->getRealPositionBeginX() + move_step, g_obj->getRealPositionBeginY());
-        //gr_power_mgr->setAngle(-58);
-        g_obj->setTextureRowAndFrame(1, 0);
+
+        if (g_obj->getCurTextureFrame() == 0)
+        {
+            g_obj->setTextureRowAndFrame(1, 1);
+        }
+        else
+        {
+            g_obj->setTextureRowAndFrame(1, 0);
+        }
     }
     else if (keycode == SDLK_SPACE)
     {
-        //gr_power_mgr->setBeginPoint(g_obj->getRealPositionBeginX(), g_obj->getRealPositionBeginY());
+        // pass
     }
 
     return gameReaction::gr_ignore;
