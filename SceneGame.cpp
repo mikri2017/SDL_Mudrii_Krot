@@ -18,7 +18,7 @@ SceneGame::SceneGame()
     hero = new MainHeroMgr();
     hero->setRealPosition(10, 350);
     hero->setWidthHeight(56, 71);
-    hero->setSpriteFilePath("assets/sprites/main_hero/Grue.png");
+    hero->setSpriteFilePath("assets/sprites/mole.png");
     hero->setMoveStep(15);
 
     // Задаем параметры текста
