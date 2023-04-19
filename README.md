@@ -38,7 +38,9 @@ sudo apt-get install libsdl2-dev libsdl2-image-dev libsdl2-mixer-dev libsdl2-ttf
 ```
 
 ### Компиляция и использование
-Проект кроссплатформенный (Windows/Linux), собирать, либо через общий Makefile, либо, открыв папку с проектом в Visual Studio Code, зажимаем Ctrl + Shift + B и выбираем желаемый сценарий сборки.
+Проект кроссплатформенный (Windows/Linux), собирать, либо через общий Makefile,
+либо, открыв папку с проектом в Visual Studio Code, зажимаем Ctrl + Shift + B
+и выбираем желаемый сценарий сборки.
 
 ### Используемый инструментарий
 
